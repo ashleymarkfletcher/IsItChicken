@@ -22,6 +22,9 @@ export default class App extends React.Component {
   renderStart = () => {
     return (
       <View style={styles.container}>
+      <Text style={{fontWeight: 'bold', fontSize: 40, color:'#FFF', marginTop: 20}}>
+        IS IT CHICKEN?
+      </Text>
         <Button
           onPress={this.showCamera}
           title="Chicken?"
