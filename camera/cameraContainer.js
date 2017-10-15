@@ -24,7 +24,6 @@ export default class CameraContainer extends React.Component {
 
   render() {
     const { hasCameraPermission, image, isChicken, loading } = this.state
-    console.log('iamge', image);
 
     if (hasCameraPermission === null) {
       return <View />
