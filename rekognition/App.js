@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import CameraContainer from './camera/cameraContainer';
+import React from 'react'
+import { StyleSheet, Text, View, Button } from 'react-native'
+import CameraContainer from './camera/cameraContainer'
 
 export default class App extends React.Component {
   constructor() {
@@ -25,7 +25,7 @@ export default class App extends React.Component {
         <Button
           onPress={this.showCamera}
           title="Chicken?"
-          color="#FAB124"
+          color="#D32F2F"
           accessibilityLabel="Show camera for chicken recognition"
         />
       </View>
@@ -33,23 +33,19 @@ export default class App extends React.Component {
   }
 
   render() {
-    // console.log('state!', this.state);
-
     return (
       <View style={{flex: 1}}>
         {!this.state.showCamera ? this.renderStart() : this.renderCamera()}
       </View>
     )
-
-
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FAB124',
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
